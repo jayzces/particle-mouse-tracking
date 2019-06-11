@@ -58,6 +58,8 @@ const drawParticles = e => {
     }
 }
 
+const touchMove = e => drawParticles(e.changedTouches[0])
+
 class Particle {
     constructor(x, y) {
         /*
@@ -110,3 +112,7 @@ resizeCanvas()
 window.addEventListener('resize', resizeCanvas, false)
 canvas.addEventListener('mousemove', drawParticles)
 canvas.addEventListener('click', drawParticles)
+canvas.addEventListener('touchstart',
+    e => canvas.addEventListener('touchmove', touchMove))
+canvas.addEventListener('touchend',
+    () =>  canvas.removeEventListener('touchmove', touchMove))
