@@ -1,0 +1,22 @@
+:root {
+    --navy: #1D2930;
+    --blue: hsl(200, 100%, 50%);
+    --purple: hsl(280, 100%, 50%);
+}
+
+body {
+    background-color: var(--navy);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+
+canvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
