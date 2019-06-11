@@ -1,6 +1,6 @@
 Particle Mouse Tracking
 =======================
-Using canvas to track the mouse and apply animations based on mouse position. Special thanks to Arnelle Balane for help in ironing out the animation bugs.
+Using canvas to track the mouse and apply animations based on mouse position. Special thanks to [Arnelle Balane](https://github.com/arnellebalane) for help in ironing out the animation bugs.
 
 ![preview](preview.gif)
 
